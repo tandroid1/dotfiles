@@ -1,0 +1,9 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set ts=2
+set shiftwidth=2
+set expandtab
+set smarttab
+set number
