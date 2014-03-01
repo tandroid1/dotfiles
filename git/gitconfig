@@ -1,0 +1,21 @@
+[user]
+	name = gabesullice
+	email = gabriel@sullice.com
+[alias]
+  st = status
+  cm = commit -m
+  cma = commit -am
+  br = branch -av
+  co = checkout
+  cod = co develop
+  com = co master
+  fs = flow feature start
+  ff = flow feature finish
+  rs = flow release start
+  rf = flow release finish
+  hs = flow hotfix start
+  hf = flow hotfix finish
+  df = diff
+  lg = log -p
+  lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  rl = reflog
