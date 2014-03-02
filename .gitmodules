@@ -16,3 +16,6 @@
 [submodule "terminal/gnome-terminal-colors-solarized"]
 	path = terminal/gnome-terminal-colors-solarized
 	url = git@github.com:sigurdga/gnome-terminal-colors-solarized.git
+[submodule "git/git-flow-completion"]
+	path = git/git-flow-completion
+	url = git@github.com:bobthecow/git-flow-completion.git
