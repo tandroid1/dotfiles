@@ -21,3 +21,5 @@
   rl = reflog
 [push]
 	default = simple
+[color]
+	ui = true
