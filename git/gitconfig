@@ -7,8 +7,8 @@
   cma = commit -am
   br = branch -av
   co = checkout
-  cod = co develop
-  com = co master
+  cod = checkout develop
+  com = checkout master
   fs = flow feature start
   ff = flow feature finish
   rs = flow release start
