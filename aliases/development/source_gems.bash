@@ -1,0 +1,1 @@
+alias cw="compass watch"
