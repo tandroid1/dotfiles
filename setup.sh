@@ -30,6 +30,21 @@ else
   echo "Created new ~/.vimrc symlink to the .dotfiles .vimrc file."
 fi
 
+if [ -h ~/.git_template ]
+then 
+  rm ~/.git_template
+  ln -s ~/.dotfiles/git/git_template ~/.git_template
+  echo "Replaced ~/.git_template symlink with symlink to the .dotfiles git_template directory."
+elif [ -f ~/.git_template ]
+then 
+  mv ~/.git_template ~/.git_template-bkp
+  ln -s ~/.dotfiles/git/git_template ~/.git_template
+  echo "Moved ~/.git_template to .git_template-bkp and created new ~/.git_template symlink to the .dotfiles git_template directory."
+else
+  ln -s ~/.dotfiles/git/git_template ~/.git_template
+  echo "Created new ~/.git_template symlink to the .dotfiles git_template directory."
+fi
+
 if [ -h ~/.gitconfig ]
 then 
   rm ~/.gitconfig
