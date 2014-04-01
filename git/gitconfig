@@ -10,6 +10,7 @@
   cod = checkout develop
   com = checkout master
   pua = push -u --all
+  aaa = add -A :/
   fi = flow init -d
   fs = flow feature start
   ff = flow feature finish
@@ -25,3 +26,5 @@
 	default = simple
 [color]
 	ui = true
+[init]
+	templatedir = ~/.git_template
