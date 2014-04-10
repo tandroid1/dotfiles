@@ -28,3 +28,5 @@
 	ui = true
 [init]
 	templatedir = ~/.git_template
+[core]
+	excludesfile = ~/.gitignore

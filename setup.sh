@@ -60,6 +60,21 @@ else
   echo "Created new ~/.gitconfig symlink to the .dotfiles .gitconfig file."
 fi
 
+if [ -h ~/.gitignore ]
+then 
+  rm ~/.gitignore
+  ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+  echo "Replaced ~/.gitignore symlink with symlink to the .dotfiles .gitignore file."
+elif [ -f ~/.gitignore ]
+then 
+  mv ~/.gitignore ~/.gitignore-bkp
+  ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+  echo "Moved ~/.gitignore to .gitignore-bkp and created new ~/.gitignore symlink to the .dotfiles .gitignore file."
+else
+  ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+  echo "Created new ~/.gitignore symlink to the .dotfiles .gitignore file."
+fi
+
 if [ -h ~/.bashrc ]
 then 
   rm ~/.bashrc
