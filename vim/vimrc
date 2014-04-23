@@ -8,3 +8,8 @@ set shiftwidth=2
 set expandtab
 set smarttab
 set number
+if has('gui_running')
+  colorscheme solarized
+  set background=dark
+  set gfn=Monaco:h14
+endif
