@@ -1,3 +1,6 @@
 stage_file_proxy
 
 *.swp
+
+# IDE files
+*.idea*
