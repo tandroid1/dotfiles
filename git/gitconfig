@@ -10,6 +10,7 @@
   cod = checkout develop
   com = checkout master
   pa = push --all
+  pt = push --tags
   pua = push -u --all
   aaa = add -A :/
   fi = flow init -d
