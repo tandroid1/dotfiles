@@ -2,6 +2,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 call pathogen#helptags()
 syntax on
+set t_Co=16
+set background=dark
+colorscheme solarized
 filetype plugin indent on
 set ts=2
 set shiftwidth=2
@@ -9,7 +12,5 @@ set expandtab
 set smarttab
 set number
 if has('gui_running')
-  colorscheme solarized
-  set background=dark
   set gfn=Monaco:h14
 endif
