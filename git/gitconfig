@@ -12,7 +12,7 @@
   pa = push --all
   pt = push --tags
   pua = push -u --all
-  aaa = add -A :/
+  aa = add -A :/
   fi = flow init -d
   fs = flow feature start
   ff = flow feature finish
@@ -32,3 +32,4 @@
 	templatedir = ~/.git_template
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
