@@ -28,3 +28,6 @@
 [submodule "drupal/drush"]
 	path = drupal/drush
 	url = git@github.com:drush-ops/drush.git
+[submodule "vim/.vim/bundle/vim-ansible-yaml"]
+	path = vim/.vim/bundle/vim-ansible-yaml
+	url = git@github.com:chase/vim-ansible-yaml.git
