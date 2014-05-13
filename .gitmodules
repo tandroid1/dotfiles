@@ -31,3 +31,6 @@
 [submodule "vim/.vim/bundle/vim-ansible-yaml"]
 	path = vim/.vim/bundle/vim-ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml.git
+[submodule "drupal/drupalvim"]
+	path = drupal/drupalvim
+	url = http://git.drupal.org/project/vimrc.git
