@@ -11,6 +11,9 @@ set shiftwidth=2
 set expandtab
 set smarttab
 set number
+
+inoremap <C-f> <C-x><C-O>
+
 if has('gui_running')
   set gfn=Monaco:h14
 endif
