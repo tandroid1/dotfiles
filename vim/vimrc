@@ -1,10 +1,21 @@
+"Pathogen setup
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 call pathogen#helptags()
-syntax on
-set t_Co=16
+
+"Set solarized color scheme
 set background=dark
 colorscheme solarized
+
+"Ensure proper font in MacVim
+if has('gui_running')
+  set gfn=Monaco:h14
+endif
+
+
+"Code formatting
+syntax on
+set t_Co=16
 filetype plugin indent on
 set ts=2
 set shiftwidth=2
@@ -12,8 +23,9 @@ set expandtab
 set smarttab
 set number
 
+"Maps omnicomplertion to <C-f>
 inoremap <C-f> <C-x><C-O>
 
-if has('gui_running')
-  set gfn=Monaco:h14
-endif
+"vim-gitgutter settings
+let g:gitgutter_signs = 0
+let g:gitgutter_realtime = 1
