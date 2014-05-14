@@ -34,3 +34,6 @@
 [submodule "drupal/drupalvim"]
 	path = drupal/drupalvim
 	url = http://git.drupal.org/project/vimrc.git
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
