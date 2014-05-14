@@ -15,6 +15,12 @@ else
   echo "Created new ~/.vim symlink to the .dotfiles .vim directory."
 fi
 
+if [ ! -d ~/.vimbackups ]
+then
+  mkdir ~/.vimbackups
+  echo "Created .vimbackups directory."
+fi
+
 if [ -h ~/.vimrc ]
 then 
   rm ~/.vimrc

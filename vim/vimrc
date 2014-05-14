@@ -12,6 +12,9 @@ if has('gui_running')
   set gfn=Monaco:h14
 endif
 
+"Sets vim backup directories
+set backupdir=$HOME/.vimbackups//,/tmp//
+set directory=$HOME/.vimbackups//,/tmp//
 
 "Code formatting
 syntax on
@@ -27,5 +30,5 @@ set number
 inoremap <C-f> <C-x><C-O>
 
 "vim-gitgutter settings
-let g:gitgutter_signs = 0
+let g:gitgutter_signs = 1
 let g:gitgutter_realtime = 1
