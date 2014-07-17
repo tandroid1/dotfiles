@@ -1,21 +1,3 @@
-#Go to passed site folder   
-goto() {
-        cd ~/development/docroot/$1
-	if [[ -a site ]]; then
-		cd site
-	elif [[ -a docroot ]]; then
-		cd docroot
-	fi
-}
-
-_goto() {
-	local cur opts
-	cur="${COMP_WORDS[COMP_CWORD]}"
-	opts=$(cd ~/development/docroot; ls -d */. | sed 's|/./||')
-	COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
-}
-complete -F _goto goto
-
 # Edit Hosts file
 alias vim_hosts="sudo vim /etc/hosts"
 # Edit vHosts File
@@ -40,6 +22,7 @@ echo -e "# $1
 }
 alias addvhost=addvhost
 
+# MAC ONLY
 # Copy a file passed as the first parameter to the clipboard
 catcopy() {
     cat $1 | pbcopy
