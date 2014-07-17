@@ -1,5 +1,5 @@
 # Creates quick alias to get to cd the dotfiles directory.
-alias dotfiles="cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+alias dotfiles="cd $HOME/.dotfiles"
 
 # compass watch alias
 alias cw="compass watch"
