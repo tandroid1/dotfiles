@@ -5,7 +5,7 @@ dotfiles
 
 ####Installation:
 
-    git clone <url> $HOME/.dotfiles
+    git clone git@github.com:elevatedthird/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
     git submodile init
     git submodule update
