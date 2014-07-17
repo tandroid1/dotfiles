@@ -4,15 +4,19 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# This configures certain paths specific to your environment, it must be called first.
+source $HOME/.dotfiles/config.sh
+
+# These are just the output of `find $HOME/.dotfiles/ -name '*_src.sh'`
 source $HOME/.dotfiles/git/completion_src.sh
-source $HOME/.dotfiles/terminal/colors/ubuntu_src.sh
-source $HOME/.dotfiles/terminal/colors/default_src.sh
-source $HOME/.dotfiles/shell/aliases/default_src.sh
 source $HOME/.dotfiles/shell/aliases/common_src.sh
+source $HOME/.dotfiles/shell/aliases/default_src.sh
 source $HOME/.dotfiles/shell/aliases/special_src.sh
 source $HOME/.dotfiles/shell/aliases/utils_src.sh
 source $HOME/.dotfiles/shell/completion/completion_src.sh
 source $HOME/.dotfiles/shell/config/default_src.sh
 source $HOME/.dotfiles/shell/config/ubuntu_src.sh
 source $HOME/.dotfiles/shell/prompt/default_src.sh
+source $HOME/.dotfiles/terminal/colors/default_src.sh
+source $HOME/.dotfiles/terminal/colors/ubuntu_src.sh
 source $HOME/.dotfiles/vim/default_src.sh

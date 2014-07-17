@@ -3,8 +3,7 @@
 
 # Autocompletes folder names in development docroot. Set development_root accoridngly.
 goto() {
-  development_root=$HOME/development/docroot
-  cd $development_root/$1
+  cd $DOCROOT/$1
 	if [[ -a site ]]; then
 		cd site
 	elif [[ -a docroot ]]; then
