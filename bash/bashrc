@@ -4,6 +4,9 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# This configures certain paths specific to your environment, it must be called first.
+source $HOME/.dotfiles/config.sh
+
 source $HOME/.dotfiles/git/completion_src.sh
 source $HOME/.dotfiles/terminal/colors/ubuntu_src.sh
 source $HOME/.dotfiles/terminal/colors/default_src.sh
