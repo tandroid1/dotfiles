@@ -1,3 +1,6 @@
+# Creates quick alias to get to cd the dotfiles directory.
+alias dotfiles="cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # compass watch alias
 alias cw="compass watch"
 
