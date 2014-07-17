@@ -6,7 +6,7 @@ setup_dir() {
     mkdir $1
     echo "Created $1 directory."
   else
-    echo "Creating $1 failes. Directory already exists."
+    echo "Creating $1 failed. Directory already exists."
   fi
 }
 
