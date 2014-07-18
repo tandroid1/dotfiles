@@ -5,7 +5,6 @@ dotfiles
 
 ##Installation:
 
-<<<<<<< HEAD
 __If you want to customize your dotfiles, you might consider [forking this repo first](#forking).__
 
 #####Basic
