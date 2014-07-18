@@ -1,9 +1,9 @@
 dotfiles
 ========
 
-###An E3 compilation of common configuration.
+#An E3 compilation of common configuration.
 
-###Installation:
+##Installation:
 
 __If you want to customize your dotfiles, you might consider [forking this repo first](#forking).__
 
@@ -57,4 +57,4 @@ To stay up to date with the `e3` repo run:
     git fetch e4
     git rebase e3/master
 
-You can these merge these changes into your `master` branch. Your `e3` branch should always act as an intermediary between your dotfiles and the `e3` repo. Take care to make sure you don't merge personal custimizations from your `master` branch into your `e3` branch.
+You can merge these changes into your `master` branch. Your `e3` branch should always act as an intermediary between your dotfiles and the `e3` repo. Take care to make sure you don't merge personal custimizations from your `master` branch into your `e3` branch.
