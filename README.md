@@ -1,8 +1,6 @@
 dotfiles
 ========
 
-###An E3 compilation of common configuration.
-
 ###Installation:
 
 #####Basic
