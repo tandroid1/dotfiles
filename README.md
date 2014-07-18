@@ -1,11 +1,11 @@
 dotfiles
 ========
 
-###An E3 compilation of common configuration.
+#An E3 compilation of common configuration.
 
-###Installation:
+##Installation:
 
-#####Basic
+####asic
 
     git clone --recursive git@github.com:elevatedthird/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
@@ -25,7 +25,7 @@ Finally,
 
 That's it!
 
-#####Colors
+####Colors
 
 OSX only
 
