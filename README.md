@@ -5,7 +5,7 @@ dotfiles
 
 ##Installation:
 
-####asic
+####Basic
 
     git clone --recursive git@github.com:elevatedthird/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
