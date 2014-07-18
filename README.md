@@ -37,15 +37,17 @@ OSX only
 
 ###Forking
 
-In order to personalize your dotfiles and version controlling them in Git, it's highly recommended that you fork this repository. To do that, scroll to the top of this page and click the fork button in the top right corner. This will allow you to create a clone of the repo directly on GitHub which you can now clone from down to your local machine. Next, if you'd like to contribute back to the E3 version, go ahead and create an E3 branch.
+In order to personalize your dotfiles and version control them in Git, it's highly recommended that you fork this repository instead of cloning it directly. To do that, scroll to the top of this page and click the fork button in the top right corner. This will allow you to create clone this repo directly to your GitHub account. Now, you can clone directly from that new repo to your local machine.
+
+If you'd like to contribute back to the E3 repo, go ahead and create an E3 branch in your own repo.
 
     git checkout -b e3
 
-Now push it to your remote repo.
+Now push the new branch to your remote repo.
 
     git push -u origin e3
 
-Finally, add the original E3 dotfiles repo as a new remote so that you can keep up to date with changes and updates to it. 
+Finally, add the original E3 repo as a new remote. This will allow you to keep up to date with changes and updates to made by others on the team. 
 
     git remote add e3 git@github.com:elevatedthird/dotfiles.git
 
@@ -54,7 +56,7 @@ From now on, do personal customizations on your `master` branch and shareable co
 To stay up to date with the `e3` repo run:
 
     git checkout e3
-    git fetch e4
+    git fetch e3
     git rebase e3/master
 
 You can merge these changes into your `master` branch. Your `e3` branch should always act as an intermediary between your dotfiles and the `e3` repo. Take care to make sure you don't merge personal custimizations from your `master` branch into your `e3` branch.
