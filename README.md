@@ -1,13 +1,15 @@
 dotfiles
 ========
 
-#An E3 compilation of common configuration.
+##An E3 compilation of common configuration.
 
-##Installation:
+###Installation:
 
 __If you want to customize your dotfiles, you might consider [forking this repo first](#forking).__
 
-#####Basic
+####Basic
+
+Run these 4 commands; don't forget the `--recursive`.
 
     git clone --recursive <clone URL from your cloned repo> $HOME/.dotfiles
     cd $HOME/.dotfiles
@@ -17,7 +19,7 @@ __If you want to customize your dotfiles, you might consider [forking this repo 
 Next, you'll need to configure a thing or two. Open up config.sh and update it according to your local set up. Then, you're ready to source the new .bashrc file.
 
     cd $HOME/.dotfiles/
-    vim config.sh // or your 'other' favorite text editor
+    vim config.sh # or you can use your 'other' favorite text editor
 
 Change the DOCROOT path to wherever you plan on keeping all your project repos. 
 
@@ -27,7 +29,7 @@ Finally,
 
 That's it!
 
-#####Colors
+####Colors
 
 OSX only
 
