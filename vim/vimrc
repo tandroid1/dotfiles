@@ -32,3 +32,9 @@ inoremap <C-f> <C-x><C-O>
 "vim-gitgutter settings
 let g:gitgutter_signs = 1
 let g:gitgutter_realtime = 1
+
+"vim-go settings
+let g:go_disable_autoinstall = 0
+
+"neocomplete settings
+let g:neocomplete#enable_at_startup = 1

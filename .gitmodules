@@ -40,3 +40,9 @@
 [submodule "applications/phpstorm/intellij-colors-solarized"]
 	path = applications/phpstorm/intellij-colors-solarized
 	url = https://github.com/jkaving/intellij-colors-solarized.git
+[submodule "vim/.vim/bundle/vim-go"]
+	path = vim/.vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "vim/.vim/bundle/neocomplete"]
+	path = vim/.vim/bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
