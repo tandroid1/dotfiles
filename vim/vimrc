@@ -38,3 +38,6 @@ let g:go_disable_autoinstall = 0
 
 "neocomplete settings
 let g:neocomplete#enable_at_startup = 1
+
+"Tagbar toggle
+nmap <F8> :TagbarToggle<CR>

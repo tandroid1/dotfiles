@@ -46,3 +46,6 @@
 [submodule "vim/.vim/bundle/neocomplete"]
 	path = vim/.vim/bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "vim/.vim/bundle/tagbar"]
+	path = vim/.vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
