@@ -16,6 +16,7 @@ source $HOME/.dotfiles/shell/aliases/utils_src.sh
 source $HOME/.dotfiles/shell/completion/completion_src.sh
 source $HOME/.dotfiles/shell/config/default_src.sh
 source $HOME/.dotfiles/shell/config/ubuntu_src.sh
+source $HOME/.dotfiles/shell/path/default_src.sh
 source $HOME/.dotfiles/shell/prompt/default_src.sh
 source $HOME/.dotfiles/terminal/colors/default_src.sh
 source $HOME/.dotfiles/terminal/colors/ubuntu_src.sh
