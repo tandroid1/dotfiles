@@ -1,10 +1,9 @@
 [user]
-	name = gabesullice
-	email = gabriel@sullice.com
+  name = gabesullice
+  email = gabriel@sullice.com
 [alias]
   st = status
-  cm = commit -m
-  cma = commit -am
+  cm = commit
   br = branch -av
   co = checkout
   cod = checkout develop
@@ -25,12 +24,13 @@
   lg = log -p
   lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
   rl = reflog
+  rb = rebase
 [push]
-	default = simple
+  default = simple
 [color]
-	ui = true
+  ui = true
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+  excludesfile = ~/.gitignore
+  editor = vim
