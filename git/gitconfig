@@ -3,8 +3,7 @@
   email = gabriel@sullice.com
 [alias]
   st = status
-  cm = commit -m
-  cma = commit -am
+  cm = commit
   br = branch -av
   co = checkout
   cod = checkout develop
@@ -25,6 +24,7 @@
   lg = log -p
   lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
   rl = reflog
+  rb = rebase
 [push]
   default = simple
 [color]
