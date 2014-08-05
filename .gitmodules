@@ -52,3 +52,6 @@
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "applications/adium/adium-solarized"]
+	path = applications/adium/adium-solarized
+	url = https://github.com/ezanol/Adium-Solarized.git
