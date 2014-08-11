@@ -34,3 +34,4 @@
 [core]
   excludesfile = ~/.gitignore
   editor = vim
+  autocrlf = true
