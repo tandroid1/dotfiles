@@ -34,15 +34,15 @@ setup_dir $HOME/dotfile-bkp
 
 # Vim configurations
 setup_dir $HOME/.vimbackups 
-setup_dotfile $HOME/.dotfiles/vim/.vim $HOME/.vim 
-setup_dotfile $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc 
+setup_dotfile $HOME/.dotfiles/vim/vim $HOME/.vim 
+setup_dotfile $HOME/.dotfiles/vim/vimrc $HOME/.vimrc 
 
 
 # Git configuration
-setup_dotfile $HOME/.dotfiles/git/.gitconfig $HOME/.gitconfig 
-setup_dotfile $HOME/.dotfiles/git/.gitignore $HOME/.gitignore 
-setup_dotfile $HOME/.dotfiles/git/.git_template $HOME/.git_template 
+setup_dotfile $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig 
+setup_dotfile $HOME/.dotfiles/git/gitignore $HOME/.gitignore 
+setup_dotfile $HOME/.dotfiles/git/git_template $HOME/.git_template 
 
 # Bash configuration
-setup_dotfile $HOME/.dotfiles/bash/.bashrc $HOME/.bashrc 
+setup_dotfile $HOME/.dotfiles/bash/bashrc $HOME/.bashrc 
 
