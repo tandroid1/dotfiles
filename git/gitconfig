@@ -1,6 +1,6 @@
-# Include git user settings
-[include]
-    path = gituser
+[user]
+  name = Tanner Langley 
+  email = tlangley141@gmail.com 
 [alias]
   st = status
   cm = commit
