@@ -1,6 +1,6 @@
-[user]
-  name = gabesullice
-  email = gabriel@sullice.com
+# Include git user settings
+[include]
+    path = gituser
 [alias]
   st = status
   cm = commit
