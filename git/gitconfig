@@ -11,6 +11,7 @@
   pa = push --all
   pt = push --tags
   pat = !git pa && git pt
+  pu = push -u
   pua = push -u --all
   aa = add -A :/
   fi = flow init -d
@@ -34,4 +35,4 @@
 [core]
   excludesfile = ~/.gitignore
   editor = vim
-  autocrlf = true
+  autocrlf = input
