@@ -1,5 +1,5 @@
 # Set vi editing mode
-set -o vi
+# set -o vi
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
