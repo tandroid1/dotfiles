@@ -9,3 +9,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# prints the full path to a file, like pwd, for files
+function _pwf () {
+dir=$(echo $(cd $(dirname "$1"); pwd))
+base=$(echo $(basename "$1"))
+echo "$dir/$base"
+}
+alias pwf=_pwf
