@@ -1,17 +1,17 @@
 [submodule "vim/.vim/bundle/vim-pathogen"]
-	path = vim/.vim/bundle/vim-pathogen
+	path = vim/vim/bundle/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
 [submodule "vim/.vim/bundle/vim-bundler"]
-	path = vim/.vim/bundle/vim-bundler
+	path = vim/vim/bundle/vim-bundler
 	url = git@github.com:tpope/vim-bundler.git
 [submodule "vim/.vim/bundle/vim-sensible"]
-	path = vim/.vim/bundle/vim-sensible
+	path = vim/vim/bundle/vim-sensible
 	url = git@github.com:tpope/vim-sensible.git
 [submodule "vim/.vim/bundle/vim-ruby"]
-	path = vim/.vim/bundle/vim-ruby
+	path = vim/vim/bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
-	path = vim/.vim/bundle/vim-colors-solarized
+	path = vim/vim/bundle/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "terminal/gnome-terminal-colors-solarized"]
 	path = terminal/gnome-terminal-colors-solarized
@@ -23,34 +23,34 @@
 	path = terminal/osx-terminal.app-colors-solarized
 	url = git@github.com:tomislav/osx-terminal.app-colors-solarized.git
 [submodule "vim/.vim/bundle/vdebug"]
-	path = vim/.vim/bundle/vdebug
+	path = vim/vim/bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
 [submodule "drupal/drush"]
 	path = drupal/drush
 	url = git@github.com:drush-ops/drush.git
 [submodule "vim/.vim/bundle/vim-ansible-yaml"]
-	path = vim/.vim/bundle/vim-ansible-yaml
+	path = vim/vim/bundle/vim-ansible-yaml
 	url = git@github.com:chase/vim-ansible-yaml.git
 [submodule "drupal/drupalvim"]
 	path = drupal/drupalvim
 	url = http://git.drupal.org/project/vimrc.git
 [submodule "vim/.vim/bundle/vim-gitgutter"]
-	path = vim/.vim/bundle/vim-gitgutter
+	path = vim/vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "applications/phpstorm/intellij-colors-solarized"]
 	path = applications/phpstorm/intellij-colors-solarized
 	url = https://github.com/jkaving/intellij-colors-solarized.git
 [submodule "vim/.vim/bundle/vim-go"]
-	path = vim/.vim/bundle/vim-go
+	path = vim/vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "vim/.vim/bundle/neocomplete"]
-	path = vim/.vim/bundle/neocomplete
+	path = vim/vim/bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "vim/.vim/bundle/tagbar"]
-	path = vim/.vim/bundle/tagbar
+	path = vim/vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
+	path = vim/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "applications/adium/adium-solarized"]
 	path = applications/adium/adium-solarized
