@@ -18,7 +18,7 @@ set directory=$HOME/.vimbackups//,/tmp//
 
 "Code formatting
 syntax on
-set t_Co=16
+set t_Co=256
 filetype plugin indent on
 set ts=2
 set shiftwidth=2
