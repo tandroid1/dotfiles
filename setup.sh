@@ -49,3 +49,5 @@ setup_dotfile $HOME/.dotfiles/bash/bashrc $HOME/.bashrc
 # Tmux configuration
 setup_dotfile $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 
+# irssi configuration
+setup_dotfile $HOME/.dotfiles/irssi/irssi $HOME/.irssi
