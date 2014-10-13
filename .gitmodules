@@ -55,3 +55,6 @@
 [submodule "applications/adium/adium-solarized"]
 	path = applications/adium/adium-solarized
 	url = https://github.com/ezanol/Adium-Solarized.git
+[submodule "shared/powerline"]
+	path = shared/powerline
+	url = git@github.com:Lokaltog/powerline.git
