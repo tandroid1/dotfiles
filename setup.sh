@@ -49,5 +49,8 @@ setup_dotfile $HOME/.dotfiles/bash/bashrc $HOME/.bashrc
 # Tmux configuration
 setup_dotfile $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 
+# mcabber configuration
+setup_dotfile $HOME/.dotfiles/mcabber/mcabber $HOME/.mcabber
+
 # irssi configuration
 setup_dotfile $HOME/.dotfiles/irssi/irssi $HOME/.irssi
