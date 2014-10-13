@@ -36,3 +36,4 @@
   excludesfile = ~/.gitignore
   editor = vim
   autocrlf = input
+  fileMode = false
