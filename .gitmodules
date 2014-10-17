@@ -58,3 +58,6 @@
 [submodule "shared/powerline"]
 	path = shared/powerline
 	url = git@github.com:Lokaltog/powerline.git
+[submodule "vim/vim/bundle/vim-eunuch"]
+	path = vim/vim/bundle/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
