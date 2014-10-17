@@ -26,6 +26,10 @@ set expandtab
 set smarttab
 set number
 
+"Column width
+set colorcolumn=80
+highlight colorcolumn ctermbg=235
+
 "Maps omnicomplertion to <C-f>
 inoremap <C-f> <C-x><C-O>
 
