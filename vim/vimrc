@@ -28,7 +28,7 @@ set number
 
 "Column width
 set colorcolumn=80
-highlight colorcolumn ctermbg=235
+highlight colorcolumn ctermbg=Black
 
 "Maps omnicomplertion to <C-f>
 inoremap <C-f> <C-x><C-O>
@@ -51,3 +51,8 @@ map <F7> :NERDTreeToggle<CR>
 
 "Source files
 source $HOME/.vim/source/gotags
+
+"Vdebug
+let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/gsullice/development/sites"}, 'server': ''}
+"let g:vdebug_options['path_maps'] = {"/vagrant_data": "/Users/gsullice/development/sites"}
+"let g:vdebug_options['server'] = ""
