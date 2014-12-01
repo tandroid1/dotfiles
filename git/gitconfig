@@ -5,6 +5,7 @@
   st = status
   cm = commit
   br = branch -av
+  brd = branch -d
   co = checkout
   cod = checkout develop
   com = checkout master
@@ -26,6 +27,7 @@
   lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
   rl = reflog
   rb = rebase
+  freebase = pull --rebase
 [push]
   default = simple
 [color]
