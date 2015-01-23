@@ -18,3 +18,6 @@ alias vim_hosts="sudo vim /etc/hosts"
 alias vim_vhosts="vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 # Drupal alias folder
 alias vim_alias="vim ~/.drush"
+
+# MAC only
+alias dnsmasq_restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
