@@ -4,3 +4,6 @@ stage_file_proxy
 
 # IDE files
 *.idea*
+
+# bundler
+*.bundle*
