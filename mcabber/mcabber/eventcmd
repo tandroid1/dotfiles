@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $1 = 'MSG' -a $2 = 'IN' ]; then
+  cat $4 \
+    | /Applications/terminal-notifier.app/Contents/MacOS/terminal-notifier -title "Chat from $3" -sound Purr
+  rm $4
+fi
