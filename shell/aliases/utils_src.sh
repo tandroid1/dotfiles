@@ -29,3 +29,10 @@ addvhost() {
   </VirtualHost>\n" >> /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 }
 alias addvhost=addvhost
+
+# cgrep performs a normal grep, but cuts the output to 120 chars
+_cgrep () {
+  grep $@ | cut -c1-120
+}
+
+alias cgrep="_cgrep"
