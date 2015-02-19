@@ -61,3 +61,6 @@
 [submodule "vim/vim/bundle/vim-eunuch"]
 	path = vim/vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
+[submodule "vim/vim/bundle/vim-php"]
+	path = vim/vim/bundle/vim-php
+	url = git@github.com:StanAngeloff/php.vim.git
