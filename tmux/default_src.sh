@@ -19,7 +19,7 @@ tmx () {
     tmux send-keys -t default:vagrant "cd ~/development/vagrant; ssh-add; ssh vagrant" enter
     tmux send-keys -t default:2 "cd ~" enter
     tmux send-keys -t default:logs.0 "ssh vagrant -t 'sudo tail -f /var/log/httpd/error_log'" enter
-    tmux send-keys -t default:logs.0 "ssh vagrant -t 'sudo tail -f /var/log/mysqld.log'" enter
+    tmux send-keys -t default:logs.1 "ssh vagrant -t 'sudo tail -f /var/log/mysqld.log'" enter
 
     # Freshen up all our windows.
     tmux send-keys -t default:local "clear" enter
