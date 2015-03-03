@@ -3,6 +3,9 @@
 # Git aliases. Note: git command aliases should go in your .gitconfig file.
 alias g="git"
 
+# Go related
+alias gohome="cd $GOPATH/src/github.com/gabesullice"
+
 # Aliases vim
 alias v="vim"
 
