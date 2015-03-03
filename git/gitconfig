@@ -25,6 +25,7 @@
   df = diff
   lg = log -p
   lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  clsd = log --graph --decorate --pretty=oneline --abbrev-commit
   rl = reflog
   rb = rebase
   freebase = pull --rebase
