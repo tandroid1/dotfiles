@@ -51,3 +51,11 @@ alias drsp='cp sites/default/default.settings.php sites/default/settings.php'
 alias dr='drush'
 alias sqlsync='drush sql-sync --no-cache'
 alias drsync='drush rsync -rv'
+
+alias js_on="drush vset preprocess_js 1 --yes"
+alias js_off="drush vset preprocess_js 0 --yes"
+alias css_on="drush vset preprocess_css 1 --yes"
+alias css_off="drush vset preprocess_css 0 --yes"
+alias agg_off="js_off && css_off"
+alias agg_on="js_on && css_on"
+alias clear_theme="drush cc css+js"
