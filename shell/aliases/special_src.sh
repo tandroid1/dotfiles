@@ -41,7 +41,6 @@ alias mamp_restart="/Applications/MAMP/bin/apache2/bin/apachectl restart"
 alias gcal='open https://www.google.com/calendar/'
 
 # Drush
-alias drush='~/drupal/drush/drush'
 alias ds='drush status'
 alias drcc='drush cache-clear all'
 alias drdu='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql'

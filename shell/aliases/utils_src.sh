@@ -46,3 +46,18 @@ setupsite() {
   addvhost $1 $2
   addsa $3 $2 $1
 }
+
+_sql-slurp () {
+        printf "This will overwrite the $2 database with the $1 database.\n"
+        printf "\n\t\t*** $1 -> $2 ***\n\n"
+        sleep 3s
+        read -p "Are you sure [Y/n]? " -n 1 -r
+        if [[ $REPLY  =~ ^[Yy]$ ]]; then
+                drush $2 sql-drop -y
+                printf "\n"
+                drush $1 sql-dump | pv -br | drush $2 sql-cli -A
+        fi
+        printf "\n"
+}
+
+alias sql-slurp="_sql-slurp"
