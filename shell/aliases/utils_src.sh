@@ -61,3 +61,14 @@ _sql-slurp () {
 }
 
 alias sql-slurp="_sql-slurp"
+
+# git commit shortcut
+_gcm () {
+  if [$1]; then
+    git commit -m "$1"
+  else
+    git commit
+  fi
+}
+
+alias gcm="_gcm"
