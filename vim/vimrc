@@ -4,8 +4,8 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 "Set solarized color scheme
-"set background=dark
-"colorscheme solarized
+set background=dark
+colorscheme solarized
 
 "Ensure proper font in MacVim
 if has('gui_running')
@@ -18,7 +18,7 @@ set directory=$HOME/.vimbackups//,/tmp//
 
 "Code formatting
 syntax on
-set t_Co=16
+set t_Co=256
 filetype plugin indent on
 set ts=2
 set shiftwidth=2
@@ -26,9 +26,33 @@ set expandtab
 set smarttab
 set number
 
+"Column width
+set colorcolumn=80
+highlight colorcolumn ctermbg=Black
+
 "Maps omnicomplertion to <C-f>
 inoremap <C-f> <C-x><C-O>
 
 "vim-gitgutter settings
 let g:gitgutter_signs = 1
 let g:gitgutter_realtime = 1
+
+"vim-go settings
+let g:go_disable_autoinstall = 0
+
+"neocomplete settings
+let g:neocomplete#enable_at_startup = 1
+
+"Tagbar toggle
+nmap <F8> :TagbarToggle<CR>
+
+"Nerdtree toggle
+map <F7> :NERDTreeToggle<CR>
+
+"Source files
+source $HOME/.vim/source/gotags
+
+"Vdebug
+let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/gsullice/development/sites"}, 'server': ''}
+"let g:vdebug_options['path_maps'] = {"/vagrant_data": "/Users/gsullice/development/sites"}
+"let g:vdebug_options['server'] = ""

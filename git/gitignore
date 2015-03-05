@@ -5,5 +5,5 @@ stage_file_proxy
 # IDE files
 *.idea*
 
-# ignore git user settings
-gitignore
+# bundler
+*.bundle*

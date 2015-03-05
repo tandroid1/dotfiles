@@ -1,27 +1,16 @@
+# mkcd makes a dir and immediately cd's into it
+_mkcd() {
+  mkdir $1
+  cd $1
+}
+alias mkcd=_mkcd
+
 # MAC ONLY
 # Copy a file passed as the first parameter to the clipboard
 catcopy() {
     cat $1 | pbcopy
 }
 alias catcopy=catcopy
-
-# Note: this must be configured to your development docroot
-# Add a new vhost to your vhost file with parameter one as the filename and as servername.
-addvhost() {
-  echo -e "# $1 
-<VirtualHost *:80>
-    DocumentRoot "$DOCROOT/$1/site"
-    ServerName $2
-    ServerAlias www.$2
-    <Directory $DOCROOT/$1/site/>
-        Options Indexes FollowSymlinks
-        AllowOverride All
-        Order allow,deny
-        Allow from all
-    </Directory>
-</VirtualHost>\n" >> /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
-}
-alias addvhost=addvhost
 
 addhost() {
   sudo -- sh -c "echo  \ \ >> /etc/hosts" # print line above entry.
@@ -37,15 +26,6 @@ addsa() {
 );" >> $DRUSHSA
 }
 alias addsa=addsa
-
-# $1 = sitename
-# $2 = site.local
-# $3 = aliasname
-setupsite() {
-  addhost $2
-  addvhost $1 $2
-  addsa $3 $2 $1
-}
 
 _sql-slurp () {
         printf "This will overwrite the $2 database with the $1 database.\n"
@@ -89,3 +69,10 @@ _drupal_root() {
 }
 
 alias cdd="_drupal_root"
+
+# cgrep performs a normal grep, but cuts the output to 120 chars
+function _cgrep () {
+  grep "$@" | cut -c1-120
+}
+
+alias cgrep="_cgrep"

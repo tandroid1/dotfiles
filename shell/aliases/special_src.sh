@@ -25,17 +25,8 @@ alias cdd="cap develop deploy"
 # Edit Hosts file
 alias subl_hosts="subl /etc/hosts"
 
-# Edit MAMP vHosts File
-alias subl_vhosts="subl /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
-
 # Edit Drush local aliases file
 alias subl_sa="subl ~/.drush/local.aliases.drushrc.php"
-
-# Open hosts, vhosts, and drush alias files.
-alias subl_start="subl_hosts && subl_vhosts && subl_sa"
-
-# Restart MAMP
-alias mamp_restart="/Applications/MAMP/bin/apache2/bin/apachectl restart"
 
 # Internet
 alias gcal='open https://www.google.com/calendar/'
@@ -59,3 +50,6 @@ alias css_off="drush vset preprocess_css 0 --yes"
 alias agg_off="js_off && css_off"
 alias agg_on="js_on && css_on"
 alias clear_theme="drush cc css+js"
+
+# MAC only
+alias dnsmasq_restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"

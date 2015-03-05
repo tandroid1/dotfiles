@@ -1,13 +1,13 @@
 dotfiles
 ========
 
-##An E3 compilation of common configuration.
-
-###Installation:
+##Installation:
 
 __If you want to customize your dotfiles, you might consider [forking this repo first](#forking).__
 
-####Basic
+###Installation:
+
+#####Basic
 
 Run these 4 commands; don't forget the `--recursive`.
 
