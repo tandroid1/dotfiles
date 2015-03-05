@@ -14,7 +14,6 @@ source $HOME/.dotfiles/config.sh
 # These are just the output of `find $HOME/.dotfiles/ -name '*_src.sh'`
 source $HOME/.dotfiles/drupal/drush_completion_src.sh
 source $HOME/.dotfiles/git/completion_src.sh
-source $HOME/.dotfiles/ruby/default_src.sh
 source $HOME/.dotfiles/shell/aliases/common_src.sh
 source $HOME/.dotfiles/shell/aliases/default_src.sh
 source $HOME/.dotfiles/shell/aliases/special_src.sh

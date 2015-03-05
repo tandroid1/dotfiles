@@ -1,3 +1,5 @@
+set shell=/bin/bash
+
 "Pathogen setup
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
@@ -56,3 +58,6 @@ source $HOME/.vim/source/gotags
 let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/gsullice/development/sites"}, 'server': ''}
 "let g:vdebug_options['path_maps'] = {"/vagrant_data": "/Users/gsullice/development/sites"}
 "let g:vdebug_options['server'] = ""
+set path=$PWD/**
+
+let g:gitgutter_realtime = 0
