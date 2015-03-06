@@ -35,6 +35,9 @@ highlight colorcolumn ctermbg=Black
 "Maps omnicomplertion to <C-f>
 inoremap <C-f> <C-x><C-O>
 
+"Parenthetical completion                                                          
+inoremap {<CR> {<CR>}<C-o>O 
+
 "vim-gitgutter settings
 let g:gitgutter_signs = 1
 let g:gitgutter_realtime = 1
