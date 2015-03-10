@@ -64,11 +64,18 @@ _drupal_root() {
   if [ "$current_dir" == "/" ] ; then
     exit 1 ;
   else
-    echo "$current_dir" ;
+    cd "$current_dir" ;
   fi 
 }
 
 alias cdd="_drupal_root"
+
+_theme_root() {
+   _drupal_root
+   cd "sites/all/themes/e3_zen"
+}
+
+alias cdt="_theme_root"
 
 # cgrep performs a normal grep, but cuts the output to 120 chars
 function _cgrep () {
