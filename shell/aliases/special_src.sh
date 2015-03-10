@@ -19,8 +19,8 @@ alias vim_vhosts="vim /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
 # Drupal alias folder
 alias vim_alias="vim ~/.drush"
 
-# Capistrano
-alias cdd="cap develop deploy"
+# Start screensaver
+alias ss='date && open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
 # Edit Hosts file
 alias subl_hosts="subl /etc/hosts"
