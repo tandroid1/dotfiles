@@ -83,3 +83,19 @@ function _cgrep () {
 }
 
 alias cgrep="_cgrep"
+
+_drcc() {
+  if [ "$1" == "theme" ] ; then
+    table="css-js"
+  else
+    table=$1
+  fi
+
+  if [ -z "$2" ]; then
+    drush cc "$table"
+  else
+    drush "$2" cc "$table"
+  fi
+}
+
+alias drcc="_drcc"

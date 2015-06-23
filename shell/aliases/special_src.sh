@@ -50,7 +50,7 @@ alias css_on="drush vset preprocess_css 1 --yes"
 alias css_off="drush vset preprocess_css 0 --yes"
 alias agg_off="js_off && css_off"
 alias agg_on="js_on && css_on"
-alias clear_theme="drush cc css+js"
+alias clear_theme="drush cc css-js"
 
 # site specific
 alias oedit_up="drush sql-sync --no-cache @oedit.prod default && drush updb && drush rr && drush en oedit_re_deploy"
