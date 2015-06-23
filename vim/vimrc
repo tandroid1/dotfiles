@@ -5,9 +5,15 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 call pathogen#helptags()
 
+"Set leader key
+let mapleader = ","
+
+"Set vim to use default os clipboard
+set clipboard=unnamed
+
 "Set solarized color scheme
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 "Ensure proper font in MacVim
 if has('gui_running')
@@ -38,6 +44,10 @@ inoremap <C-f> <C-x><C-O>
 "Parenthetical completion                                                          
 inoremap {<CR> {<CR>}<C-o>O 
 
+"Tab through buffers
+" nnoremap <Tab> :bnext<CR>
+" nnoremap <S-Tab> :bprevious<CR>
+
 "vim-gitgutter settings
 let g:gitgutter_signs = 1
 let g:gitgutter_realtime = 1
@@ -64,3 +74,6 @@ let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/gsullice/developm
 set path=$PWD/**
 
 let g:gitgutter_realtime = 0
+
+"vim fastunite settings
+map <C-p> [unite]p

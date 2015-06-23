@@ -64,3 +64,21 @@
 [submodule "vim/vim/bundle/vim-php"]
 	path = vim/vim/bundle/vim-php
 	url = git@github.com:StanAngeloff/php.vim.git
+[submodule "vim/vim/bundle/vim-fastunite"]
+	path = vim/vim/bundle/vim-fastunite
+	url = git@github.com:rstacruz/vim-fastunite.git
+[submodule "vim/vim/bundle/vim-vimproc"]
+	path = vim/vim/bundle/vim-vimproc
+	url = git@github.com:Shougo/vimproc.vim
+[submodule "vim/vim/bundle/vim-unite"]
+	path = vim/vim/bundle/vim-unite
+	url = git@github.com:Shougo/unite.vim
+[submodule "vim/vim/bundle/vim-neomru"]
+	path = vim/vim/bundle/vim-neomru
+	url = git@github.com:Shougo/neomru.vim
+[submodule "vim/vim/bundle/vim-unite-outline"]
+	path = vim/vim/bundle/vim-unite-outline
+	url = git@github.com:Shougo/unite-outline
+[submodule "vim/vim/bundle/vim-unite-tag"]
+	path = vim/vim/bundle/vim-unite-tag
+	url = git@github.com:tsukkee/unite-tag
