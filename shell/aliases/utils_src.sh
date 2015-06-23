@@ -72,7 +72,17 @@ alias cdd="_drupal_root"
 
 _theme_root() {
    _drupal_root
-   cd "sites/all/themes/e3_zen"
+   basepath="sites/all/themes/"
+   e3="e3_zen"
+   e5="e5_zen"
+
+   if [ -d $basepath$e3 ] ; then
+     cd "$basepath$e3"
+   elif [ -d $basepath$e5 ] ; then
+     cd "$basepath$e5"
+   else
+     echo "Could not find a zen subtheme."
+   fi
 }
 
 alias cdt="_theme_root"
