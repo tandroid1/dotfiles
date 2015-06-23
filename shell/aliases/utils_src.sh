@@ -84,7 +84,11 @@ function _cgrep () {
 
 alias cgrep="_cgrep"
 
+# Clear specific drupal cache table with drush
+# $1 - Cache table or "theme" for css-js.
+# $2 - Environment drush alias. Ex: @mysite.dev
 _drcc() {
+  # alias "css-js" to "theme" because I can never remember which comes first.
   if [ "$1" == "theme" ] ; then
     table="css-js"
   else
@@ -92,9 +96,13 @@ _drcc() {
   fi
 
   if [ -z "$2" ]; then
-    drush cc "$table"
+    # Redirect the output to /dev/null so we can do a custom message.
+    drush cc "$table" &> /dev/null 
+    echo "Cleared $table cache on the current environment."
   else
-    drush "$2" cc "$table"
+    # Redirect the output to /dev/null so we can do a custom message.
+    drush "$2" cc "$table" &> /dev/null
+    echo "Cleared $table cache on $2." 
   fi
 }
 
