@@ -38,7 +38,6 @@ alias drdu='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql
 alias drdrop='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql && drush sql-drop --yes'
 alias dren='drush pm-enable'
 alias drdis='drush pm-disable'
-alias drsp='cp sites/default/default.settings.php sites/default/settings.php'
 alias dr='drush'
 alias sqlsync='drush sql-sync --no-cache'
 alias drsync='drush rsync -rv'
@@ -50,10 +49,6 @@ alias css_on="drush vset preprocess_css 1 --yes"
 alias css_off="drush vset preprocess_css 0 --yes"
 alias agg_off="js_off && css_off"
 alias agg_on="js_on && css_on"
-alias clear_theme="drush cc css-js"
-
-# site specific
-alias oedit_up="drush sql-sync --no-cache @oedit.prod default && drush updb && drush rr && drush en oedit_re_deploy"
 
 # MAC only
 alias dnsmasq_restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
