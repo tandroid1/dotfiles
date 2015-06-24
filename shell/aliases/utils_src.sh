@@ -117,3 +117,27 @@ _drcc() {
 }
 
 alias drcc="_drcc"
+
+# _dragg() {
+#   set -e
+# 
+#   env=""
+#   if [[ $1 == @* ]] ; then
+#     env=$1
+#     prestate=$2
+#   else
+#     env=$1
+#   fi
+# 
+#   if [ $prestate == "on" ] || [ $prestate == "1" ] ; then
+#     state=1
+#   elif [ $prestate == "off" ] || [ $prestate == "0" ] ; then
+#     state=0
+#   else 
+#     echo "Invalid value."; exit 1
+#   fi
+# 
+#   preprocess_js="drush $env vset preprocess_js $state --yes"
+#   preprocess_css="drush $env vset preprocess_css $state --yes"
+# }
+

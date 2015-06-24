@@ -33,7 +33,6 @@ alias gcal='open https://www.google.com/calendar/'
 
 # Drush
 alias ds='drush status'
-alias drcc='drush cache-clear all'
 alias drdu='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql'
 alias drdrop='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql && drush sql-drop --yes'
 alias dren='drush pm-enable'
