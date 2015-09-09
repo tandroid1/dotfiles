@@ -10,6 +10,8 @@ export PATH=$PATH:/Applications/MAMP/Library/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=./node_modules/.bin:$PATH
+
 # This configures certain paths specific to your environment, it must be called first.
 source $HOME/.dotfiles/config.sh
 
@@ -29,3 +31,6 @@ source $HOME/.dotfiles/terminal/colors/default_src.sh
 source $HOME/.dotfiles/terminal/colors/ubuntu_src.sh
 source $HOME/.dotfiles/tmux/default_src.sh
 source $HOME/.dotfiles/vim/default_src.sh
+
+export NVM_DIR="/Users/tanner/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

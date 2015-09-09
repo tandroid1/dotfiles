@@ -12,7 +12,6 @@ let mapleader = ","
 set clipboard=unnamed
 
 "Set solarized color scheme
-"set background=dark
 "colorscheme solarized
 
 "Ensure proper font in MacVim
@@ -25,8 +24,10 @@ set backupdir=$HOME/.vimbackups//,/tmp//
 set directory=$HOME/.vimbackups//,/tmp//
 
 "Code formatting
-syntax on
-set t_Co=256
+syntax enable
+"set background=dark
+colorscheme darcula
+"set t_Co=256
 filetype plugin indent on
 set ts=2
 set shiftwidth=2
@@ -68,8 +69,8 @@ map <F7> :NERDTreeToggle<CR>
 source $HOME/.vim/source/gotags
 
 "Vdebug
-let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/gsullice/development/sites"}, 'server': ''}
-"let g:vdebug_options['path_maps'] = {"/vagrant_data": "/Users/gsullice/development/sites"}
+let g:vdebug_options = {'path_maps': {"/vagrant_data": "/Users/tanner/development/sites"}, 'server': ''}
+"let g:vdebug_options['path_maps'] = {"/vagrant_data": "/Users/tanner/development/sites"}
 "let g:vdebug_options['server'] = ""
 set path=$PWD/**
 

@@ -87,6 +87,13 @@ _theme_root() {
 
 alias cdt="_theme_root"
 
+_vlad_root() {
+   _drupal_root
+   cd "../vlad"
+}
+
+alias cdv="_vlad_root"
+
 # cgrep performs a normal grep, but cuts the output to 120 chars
 function _cgrep () {
   grep "$@" | cut -c1-120
@@ -117,6 +124,27 @@ _drcc() {
 }
 
 alias drcc="_drcc"
+
+# Quick copy a file from the templates directory.
+_cpt() {
+  if [ "$1" == "settings" ] ; then
+    template="local-settings.inc"
+  else
+    echo "Cound not find any templates named \"$1\"."
+    exit 1 ;
+  fi
+
+  if [ -z "$2" ] ; then
+    destination="./"
+  else
+    destination="$2"
+  fi
+
+  cp ~/templates/"$template" "$destination"
+
+}
+
+alias cpt="_cpt"
 
 # _dragg() {
 #   set -e
