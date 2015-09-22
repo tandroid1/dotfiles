@@ -1,0 +1,8 @@
+#
+# robots.txt
+# 
+# Alternative robots.txt to prevent search engines from indexing
+# Dev sites.
+#
+User-agent: *
+Disallow: /
