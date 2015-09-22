@@ -129,9 +129,10 @@ alias drcc="_drcc"
 _cpt() {
   if [ "$1" == "settings" ] ; then
     template="local-settings.inc"
+  elif [ "$1" == "robots" ] ; then 
+    template="robots_noindex.txt"
   else
     echo "Cound not find any templates named \"$1\"."
-    exit 1 ;
   fi
 
   if [ -z "$2" ] ; then
