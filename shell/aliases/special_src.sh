@@ -56,3 +56,6 @@ alias dnsmasq_restart="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchc
 alias tail_php="tail /Applications/MAMP/bin/php/php5.5.18/conf/php.ini"
 alias tail_apache="tail /Applications/MAMP/logs/mysql_error_log.err"
 alias apache_restart="sudo /Applications/MAMP/Library/bin/apachectl restart"
+
+# Git
+alias gcr="git clone --recursive"
