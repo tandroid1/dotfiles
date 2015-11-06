@@ -28,16 +28,16 @@ addsa() {
 alias addsa=addsa
 
 _sql-slurp () {
-        printf "This will overwrite the $2 database with the $1 database.\n"
-        printf "\n\t\t*** $1 -> $2 ***\n\n"
-        sleep 3s
-        read -p "Are you sure [Y/n]? " -n 1 -r
-        if [[ $REPLY  =~ ^[Yy]$ ]]; then
-                drush $2 sql-drop -y
-                printf "\n"
-                drush $1 sql-dump | pv -br | drush $2 sql-cli -A
-        fi
-        printf "\n"
+  printf "This will overwrite the $2 database with the $1 database.\n"
+  printf "\n\t\t*** $1 -> $2 ***\n\n"
+  sleep 3s
+  read -p "Are you sure [Y/n]? " -n 1 -r
+  if [[ $REPLY  =~ ^[Yy]$ ]]; then
+    drush $2 sql-drop -y
+    printf "\n"
+    drush $1 sql-dump | pv -br | drush $2 sql-cli -A
+  fi
+  printf "\n"
 }
 
 alias sql-slurp="_sql-slurp"
@@ -75,13 +75,16 @@ _theme_root() {
    basepath="sites/all/themes/"
    e3="e3_zen"
    e5="e5_zen"
+   tk="themekit"
 
    if [ -d $basepath$e3 ] ; then
      cd "$basepath$e3"
    elif [ -d $basepath$e5 ] ; then
      cd "$basepath$e5"
+   elif [ -d $basepath$tk ] ; then
+     cd "$basepath$tk"
    else
-     echo "Could not find a zen subtheme."
+     echo "Could not find any predefined themes."
    fi
 }
 
