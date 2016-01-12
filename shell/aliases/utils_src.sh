@@ -145,6 +145,7 @@ _cpt() {
   fi
 
   cp ~/templates/"$template" "$destination"
+  vim "$destination"/"$template"
 
 }
 
@@ -173,3 +174,27 @@ alias cpt="_cpt"
 #   preprocess_css="drush $env vset preprocess_css $state --yes"
 # }
 
+_mysql_use_brew() {
+ brew services stop mysql
+ brew unlink mysql
+ mv /usr/local/bin/mysql /usr/local/bin/xmysql
+ brew link mysql
+ brew services start mysql
+ echo "Using homebrew mysql. Use 'bundle exec script/server' to start server."
+}
+
+alias mysql_use_brew="_mysql_use_brew"
+
+_mysql_use_mamp() {
+   brew services stop mysql
+   brew unlink mysql
+   mv /usr/local/bin/xmysql /usr/local/bin/mysql
+   echo "Using MAMP mysql. Remember to start servers."
+}
+alias mysql_use_mamp="_mysql_use_mamp"
+
+_switch_drush() {
+  composer global require drush/drush:"$1"
+}
+
+alias switch_drush="_switch_drush"

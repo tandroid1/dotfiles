@@ -25,7 +25,13 @@
   hf = flow hotfix finish
   df = diff
   lg = log -p
+  l1 = log --max-count=1
+  l2 = log --max-count=2
+  l3 = log --max-count=3
+  l4 = log --max-count=4
+  l5 = log --max-count=5
   lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lss = log --graph --decorate --pretty=oneline --abbrev-commit --all --max-count=30
   clsd = log --graph --decorate --pretty=oneline --abbrev-commit
   rl = reflog
   rb = rebase
