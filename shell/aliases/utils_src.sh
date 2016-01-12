@@ -198,3 +198,13 @@ _switch_drush() {
 }
 
 alias switch_drush="_switch_drush"
+
+_sql_self() {
+ drush sql-sync "$1" @self
+}
+alias sql-self="_sql_self"
+
+_rsync_self() {
+   drush rsync -rv "$1" :%files
+}
+alias rsync-self="_rsync_self"
