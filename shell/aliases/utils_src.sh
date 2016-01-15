@@ -205,6 +205,6 @@ _sql_self() {
 alias sql-self="_sql_self"
 
 _rsync_self() {
-   drush rsync -rv "$1" :%files
+   drush rsync -rv "$1":%files %files
 }
 alias rsync-self="_rsync_self"

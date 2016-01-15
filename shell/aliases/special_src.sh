@@ -9,6 +9,8 @@ alias v="vim"
 # Creates quick alias to get to cd the dotfiles directory.
 alias dotfiles="cd $HOME/.dotfiles"
 
+alias bash_src="source $HOME/.bash_profile"
+
 # compass watch alias
 alias cw="compass watch"
 
