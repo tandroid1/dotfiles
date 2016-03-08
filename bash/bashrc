@@ -21,6 +21,7 @@ source $HOME/.dotfiles/git/completion_src.sh
 source $HOME/.dotfiles/shell/aliases/common_src.sh
 source $HOME/.dotfiles/shell/aliases/default_src.sh
 source $HOME/.dotfiles/shell/aliases/special_src.sh
+source $HOME/.dotfiles/shell/aliases/default_drush.sh
 source $HOME/.dotfiles/shell/aliases/utils_src.sh
 source $HOME/.dotfiles/shell/completion/completion_src.sh
 source $HOME/.dotfiles/shell/config/default_src.sh

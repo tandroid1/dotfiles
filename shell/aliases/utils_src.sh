@@ -212,7 +212,8 @@ _rsync_self() {
 alias rsync-self="_rsync_self"
 
 _drush_default() {
-   echo "alias dr=\"drush$1\"" > ~/.dotfiles/shell/aliases/default_drush.sh
-   source $HOME/.dotfiles/shell/aliases/default_drush.sh
+   echo "alias dr=\"drush$1\"" > $DOTFILES/shell/aliases/default_drush.sh
+   source $DOTFILES/shell/aliases/default_drush.sh
+   drush --version
 }
 alias drush_default="_drush_default"
