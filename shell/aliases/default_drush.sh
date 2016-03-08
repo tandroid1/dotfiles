@@ -1,0 +1,1 @@
+alias dr="drush6"

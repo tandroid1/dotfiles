@@ -134,6 +134,8 @@ _cpt() {
     template="local-settings.inc"
   elif [ "$1" == "robots" ] ; then 
     template="robots_noindex.txt"
+  elif [ "$1" == "dashrc" ] ; then 
+    template="dashrc"
   else
     echo "Cound not find any templates named \"$1\"."
   fi
@@ -208,3 +210,9 @@ _rsync_self() {
    drush rsync -rv "$1":%files %files
 }
 alias rsync-self="_rsync_self"
+
+_drush_default() {
+   echo "alias dr=\"drush$1\"" > ~/.dotfiles/shell/aliases/default_drush.sh
+   source $HOME/.dotfiles/shell/aliases/default_drush.sh
+}
+alias drush_default="_drush_default"

@@ -34,12 +34,15 @@ alias subl_sa="subl ~/.drush/local.aliases.drushrc.php"
 alias gcal='open https://www.google.com/calendar/'
 
 # Drush
+alias drush6='~/drush6/vendor/bin/drush'
+alias drush7='~/drush7/vendor/bin/drush'
+alias drush8='~/drush8/vendor/bin/drush'
+
 alias ds='drush status'
 alias drdu='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql'
 alias drdrop='drush sql-dump --ordered-dump --result-file=~/tmp/sql-dumps/dump.sql && drush sql-drop --yes'
 alias dren='drush pm-enable'
 alias drdis='drush pm-disable'
-alias dr='drush'
 alias sqlsync='drush sql-sync --no-cache'
 alias drsync='drush rsync -rv'
 
